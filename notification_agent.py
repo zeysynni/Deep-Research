@@ -14,8 +14,8 @@ INSTRUCTIONS = """You are able to send a nicely formatted summary based on a det
 You will be provided with a detailed report. You should use your tool to send one push up notification, providing the 
 report converted into clean, well structured text with an appropriate subject line."""
 
-email_agent = Agent(
-    name="Email agent",
+notification_agent = Agent(
+    name="Notification agent",
     instructions=INSTRUCTIONS,
     tools=[push_notification],
     model="gpt-4o-mini",
